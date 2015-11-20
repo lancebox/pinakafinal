@@ -30,7 +30,7 @@
       <div class="nav-wrapper">
         <a href="#"><i class="tiny material-icons left"> </i></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <a href="#!" class="left brand-logo"><img src="../../pictures/LOGO2.gif" height="65 px" width="170 px"></a>
+        <a href="#!" class="left brand-logo"><img class="responsive image" src="../../pictures/LOGO2.gif" height="65 px" width="170 px"></a>
         <ul class="right hide-on-med-and-down">
               <li><a href="/cashier"><i class="tiny material-icons left">receipt</i>Cashier</a></li>
               <li><a href="/np"><i class="tiny material-icons left">shop</i>Products</a></li>

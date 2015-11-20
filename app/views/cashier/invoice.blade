@@ -1,0 +1,61 @@
+@extends ('template.admintemp')
+
+@section('content')
+
+<div class="container">
+ <h6 class="center-align"><b>ASK A VET</b></h6>
+          <h6 class="center-align">Animal Medical Hospital</h6>
+          <br>
+          <h4 class="center-align"><u>Invoice</u></h4>
+        </div>
+
+        <div>
+          <h6 class="left-align">Invoice Number: {{ $sale->id }}</h6>
+          <h6 class="left-align">Date: {{ $sale->created_at }}</h6>
+          <h6 class="left-align">Cashier: {{ $sale->user_name }}</h6>
+        </div>
+
+        <div>
+          <table class="bordered centered">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+
+            <tbody>
+
+
+             <tr>
+                @foreach($detail as $d)
+                @if($sale->id == $d->sales_id)
+                <td>{{ $d->product_name }}</td>
+                <td>{{ $d->product_quantity }}</td>
+                <td>{{ $d->product_retailPrice }}</td>
+              </tr>
+                @endif
+                @endforeach
+      
+
+
+       
+  
+            </tbody>
+
+          </table>
+        </div>
+
+        <div class="right">
+          <h6><b>Sub total:</b> {{ $sale->sales_cashTender }}</h6>
+          <h6><b>VAT:</b>           12%</h6>
+          <h6><b>Less VAT:</b>{{ $sale->sales_cashTender * $vat }}</h6>
+          <br>
+          <h6><b>Cash Rendered: </b>{{$sale->sales_cashTender}} </h6>
+          <h6><b>Change: </b>{{ $sale->sales_cashTender - $sale->sales_finalTotal }}</h6>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>

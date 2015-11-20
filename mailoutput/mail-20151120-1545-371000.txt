@@ -1,0 +1,77 @@
+To: jomarilance2@yahoo.com
+Subject: 
+Message-ID: <d072e63b4e5e81c2a4ba87ae476460db@localhost>
+Date: Fri, 20 Nov 2015 23:45:05 +0800
+From: Ask a Vet - Animal Medical Hospital <askavetamh@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3D"en">
+    <link type=3D"text/css" rel=3D"s=
+tylesheet" href=3D"../css/materialize.min.css"  media=3D"screen,projection"=
+/>
+=09<link type=3D"text/css" rel=3D"stylesheet" href=3D"../css/style.css=
+" media=3D"screen,projection"/>
+=09 <!-- Compiled and minified JavaScript=
+ -->
+   =09<meta name=3D"viewport" content=3D"width=3Ddevice-width, initi=
+al-scale=3D1.0"/>
+=09<link href=3D"https://fonts.googleapis.com/icon?fami=
+ly=3DMaterial+Icons" rel=3D"stylesheet">
+       =20
+=09<head>
+=09<meta =
+charset=3D"utf-8">
+=09</head>
+=09<body>
+
+=09
+=09=09<div class=3D"=
+row">
+=09=09=09<div class=3D"card-panel col s8">
+=09=09=09=09<div class=
+=3D"center">
+=09=09=09=09=09<div class=3D"card-image">
+=09=09=09=09=09=
+=09<img src=3D"../../pictures/LOGO.jpg" width=3D"85%" height=3D"85%">
+=09=
+=09=09=09=09=09<h5>Password Reset</h5>
+=09=09=09=09=09</div>
+
+=09=09=
+=09=09=09<h5 class=3D"left-align"><strong>Hi,</strong></h5>
+=09=09=09=09=
+=09<br>
+
+=09=09=09=09=09<h6 class=3D"left-align">
+=09=09=09=09=09=09T=
+o reset your password, complete this form: http://localhost:8000/password/r=
+eset/d52248655d39c42f07bb6a539518c89d67526ab9.
+=09=09=09=09=09</h6>
+=09=
+=09=09=09=09<h6 class=3D"left-align">
+=09=09=09=09=09=09<i>
+=09=09=09=
+=09=09=09=09This link will expire in 60 minutes.
+=09=09=09=09=09=09</i>=
+
+=09=09=09=09=09</h6>
+=09=09=09=09=09<br>
+=09=09=09=09=09<br>
+=09=
+=09=09=09</div>
+=09=09=09</div>
+=09=09</div>
+
+ <script type=3D"text=
+/javascript" src=3D"https://code.jquery.com/jquery-2.1.1.min.js"></script>=
+
+ <script type=3D"text/javascript" src=3D"../js/materialize.min.js"></scr=
+ipt>
+ <script type=3D"text/javascript" src=3D"../js/init.js"></script>
+=
+=09</body>
+</html>
+

@@ -32,10 +32,10 @@
                               @if ($errors->has('user_name')) <p class="help-block">{{ $errors->first('user_name') }}</p> @endif
                             </div>
 
-                            <div class="input-field col s12 @if ($errors->has('user_email')) red-text text-darken-3 @endif">
-                              <input id="user_email" name="user_email" value="{{Auth::user()->user_email}}" type="email" required="" maxlength="40">
+                            <div class="input-field col s12 @if ($errors->has('email')) red-text text-darken-3 @endif">
+                              <input id="email" name="email" value="{{Auth::user()->email}}" type="email" required="" maxlength="40">
                               <label for="email">Email</label>
-                              @if ($errors->has('user_email')) <p class="help-block">{{ $errors->first('user_email') }}</p> @endif
+                              @if ($errors->has('email')) <p class="help-block">{{ $errors->first('email') }}</p> @endif
                             </div>
 
                             <div class="input-field col s12 @if ($errors->has('user_contactNo')) red-text text-darken-3 @endif">

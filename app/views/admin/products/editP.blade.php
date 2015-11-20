@@ -77,7 +77,7 @@
                         </div>
 
                         <div class="input-field col s4">
-                          <input placeholder="" id="product_MarkUpPrice" name="product_markUpPrice" value="{{$product->product_markUpPrice}}" readonly="readonly" type="text" required="" maxlength="40">
+                          <input placeholder="" id="product_MarkUpPrice" name="product_markUpPrice" value="{{$product->product_retailPrice - $product->product_supplyPrice}}" readonly="readonly" type="text" required="" maxlength="40">
                           <label for="vat">Mark-Up Price</label>
                         </div>
 

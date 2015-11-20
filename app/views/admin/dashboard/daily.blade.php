@@ -45,9 +45,11 @@
 <section>
   <div class="row">
 
+
   <div class="row">
-      <div class="col s6 m6 l6">
-        <div class="card blue-grey darken-1" id="widgetreport">
+    <div class="center">
+      <div class="col s6 m6 l6 offset-l3">
+        <div class="card green" id="widgetreport">
           <div class="card-content white-text">
             <?php  
 
@@ -59,16 +61,12 @@
           </div>
          </div>
       </div>
-      
-      <div class="col s6 m6 l6">
-        <div class="card green darken-1" id="widgetreport">
-          <div class="card-content white-text">
-
-            <h4>Profit</h4>
-          </div>
-         </div>
-      </div>
+    </div >   
   </div>
+
+
+
+
   <div class="card-panel">
 <table class="bordered striped highlight">
         <thead>
@@ -104,7 +102,7 @@
             ?>
           <tr>
               <th data-field="id">Top 5 Highest Stock Products</a></th>
-              <th data-field="name">Quantities Sold</th>
+              <th data-field="name">Quantity</th>
           </tr>
         </thead>
 

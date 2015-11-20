@@ -59,7 +59,7 @@
               <th data-field="name">Product Status</th>    
           </tr>
         </thead>
-        <?php $products = Product::all();?>
+        <?php $products = Product::where('product_type','1')->paginate();?>
         <tbody>   
           <tr>  
              @foreach ($products as $product)

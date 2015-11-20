@@ -121,7 +121,7 @@
           <td>
             <div class="row">
             <div class="input-field col s12">
-              <input type="text" required=""name="num2" id="num2" />
+              <input type="text" required=" "name="num2" id="num2" />
             </div>
             </div>
             </div>
@@ -135,19 +135,21 @@
           </td> 
         </tr>
         <tr>
+          <div class="row">
+          <div class="col s6 offset-s6">
           <td>
-             &nbsp&nbsp&nbsp&nbsp&nbsp 
-            <form method="post" action="/void">
-          <button href="/void" class="waves-effect waves-light btn teal lighten-1"><i class="material-icons right"></i>Void</button>   
-           </form>
+            <button type="submit" class="waves-effect waves-light btn teal lighten-1"><i class="material-icons right"></i>Pay</button>
+            </form> 
           </td>
-          <td>
-          <input type="hidden" name="num2" id="num2">
-           &nbsp&nbsp&nbsp&nbsp&nbsp 
-          <button type="submit" class="waves-effect waves-light btn teal lighten-1"><i class="material-icons right"></i>Pay</button>
+          </div>
+          </div>
           
-      </form> 
+          <td>
+          <form method="post" action="/void">
+          <button href="/void" class="waves-effect waves-light btn teal lighten-1"><i class="material-icons right"></i>Void</button>   
+          </form>
           </td>
+
         </tr>
       </tbody>
     </table>
@@ -157,4 +159,3 @@
 
            
 @stop
-

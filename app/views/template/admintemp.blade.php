@@ -20,7 +20,7 @@
     <!-- Dropdown USer Account  -->
 
     <ul id="dropdown1" class="dropdown-content">
-      <li><a href="settings">Account Settings</a></li>
+      <li><a href="/settings">Account Settings</a></li>
       <li class="divider"></li>
       <li><a href="{{ URL::to('logout') }}">Sign Out</a></li>
     </ul>
@@ -30,7 +30,7 @@
       <div class="nav-wrapper">
         <a href="#"><i class="tiny material-icons left"> </i></a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-        <a href="#!" class="left brand-logo"><img src="../../pictures/LOGO2.gif" height="65 px" width="170 px"></a>
+        <a href="#!" class="left brand-logo"><img class="responsive image" src="../../pictures/LOGO2.gif" height="65 px" width="170 px"></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="/dashboard"><i class="tiny material-icons left">dashboard</i>Dashboard</a></li>
           <li><a href="/users"><i class="tiny material-icons left">perm_identity</i>Users</a></li>

@@ -110,3 +110,12 @@ Route::get('/nelson', function()
             . '</body></html>';
     return PDF::load($html, 'A4', 'portrait')->download('my_pdf');
 });
+
+
+Route::get('invoice',function()
+{
+
+return View::make('cashier.invoice');
+
+
+});

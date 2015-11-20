@@ -18,10 +18,6 @@
       </div>
     </div>
 
-  </div>
-</div>
-
-
 <!-- END Functions -->
 
 <div class="container col col s12 l12 m12">
@@ -48,10 +44,9 @@
       <tbody>
         <tr>
           <?php
-            $sales= DB::table('sales')
-            ->orderBy('sales_date', 'DESC')
-            ->where('sales_status', '=','1')
-            ->paginate();
+            $sales = Sale::all();
+            $detail = SaleDetail::all();
+            $vat = 0.12;
           ?>
           @foreach($sales as $sale)
           <td>{{ $sale->sales_date }}</td>
@@ -63,6 +58,11 @@
               Closed<br>
               <a class="teal-text text-lighten-1 modal-trigger" data-toggle="modal" href="#changeStatus{{$sale->id}}">Change</button>
             </td>
+          <?php elseif ($sale->sales_status == 0): ?>
+            <td>
+                Returned<br>
+                <a class="teal-text text-lighten-1 modal-trigger" data-toggle="modal" href="#changeStatus{{$sale->id}}">Change</button>
+            </td>  
           <?php endif; ?>
           <!-- Status td -->
           <td>{{ $sale->sales_finalTotal }}</td>
@@ -111,30 +111,40 @@
             </thead>
 
             <tbody>
-               <?php 
-                     $salesdetail= DB::table('salesdetail')
-                              ->orderBy('sales_date', 'DESC')
-                              ->where('sales_id', $sale->id);
-              ?> 
-              <tr>
 
+
+             <tr>
+                @foreach($detail as $d)
+                @if($sale->id == $d->sales_id)
+                <td>{{ $d->product_name }}</td>
+                <td>{{ $d->product_quantity }}</td>
+                <td>{{ $d->product_retailPrice }}</td>
               </tr>
+                @endif
+                @endforeach
+      
+
+
+       
+  
             </tbody>
 
           </table>
         </div>
 
         <div class="right">
-          <h6><b>Sub total:</b>     112</h6>
-          <h6><b>VAT:</b>           12</h6>
-          <h6><b>Less VAT:</b>      100</h6>
+          <h6><b>Sub total:</b> {{ $sale->sales_cashTender }}</h6>
+          <h6><b>VAT:</b>           12%</h6>
+          <h6><b>Less VAT:</b>{{ $sale->sales_cashTender * $vat }}</h6>
           <br>
-          <h6><b>Cash Rendered:</b> 500</h6>
-          <h6><b>Change:</b>        388</h6>
+          <h6><b>Cash Rendered: </b>{{$sale->sales_cashTender}} </h6>
+          <h6><b>Change: </b>{{ $sale->sales_cashTender - $sale->sales_finalTotal }}</h6>
           <br>
           <br>
           <br>
         </div>
+ 
+
 
         </div>
       </div>

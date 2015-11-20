@@ -46,9 +46,11 @@
     <div class="container">                    <!-- Monthly -->
       <section>
       <div class="row">
+
       <div class="row">
-      <div class="col s6 m6 l6">
-        <div class="card blue-grey darken-1" id="widgetreport">
+      <div class="center">
+      <div class="col s6 m6 l6 offset-l3">
+        <div class="card green" id="widgetreport">
           <div class="card-content white-text">
             <?php 
                   $today = Carbon::now()->month;
@@ -60,15 +62,9 @@
           </div>
          </div>
       </div>
-      
-      <div class="col s6 m6 l6">
-        <div class="card green darken-1" id="widgetreport">
-          <div class="card-content white-text">
-            <h4>Profit</h4>
-          </div>
-         </div>
-      </div>
-       </div>
+    </div>
+  </div>
+
        <div class="card-panel">
        <table class="bordered striped highlight">
         <thead>
@@ -95,33 +91,5 @@
         </tbody>
       </table>
     </div>
-<br><br>
-<div class="card-panel">
-<table class="bordered striped highlight">
-        <thead>
-          <tr>
-              <th data-field="id">Top 3 Slow Moving Items</a></th>
-              <th data-field="name">Quantities Sold</th>
-          </tr>
-        </thead>
 
-        <tbody>
-          <tr>
-            <td>Blue</td>
-            <td>5</td>
-          </tr>
-          <tr>
-            <td>Puso ni lance</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>Elaine</td>
-            <td>0</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-  </section>
-    </div>                                               <!-- Monthly End -->
 @stop

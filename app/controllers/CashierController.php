@@ -145,7 +145,7 @@ class CashierController extends \BaseController {
             $sales->time = $time;
             $sales->sales_status = 1;
             $sales->sales_finalTotal = Cart::total();
-            $sales->sales_cashTender = 2;
+            $sales->sales_cashTender = Input::get('num2');
             $sales->save();
 
             foreach (Cart::contents() as $item)

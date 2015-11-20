@@ -49,6 +49,7 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
+	return "<h1>Page Not Found</h1>";
 });
 
 /*
@@ -56,8 +57,8 @@ App::error(function(Exception $exception, $code)
 | Maintenance Mode Handler
 |--------------------------------------------------------------------------
 |
-| The "down" Artisan command gives you the ability to put an application
-| into maintenance mode. Here, you will define what is displayed back
+| into maintenance mode. Here, you will define what is displayed back| The "down" Artisan command gives you the ability to put an application
+
 | to the user if maintenance mode is in effect for the application.
 |
 */
