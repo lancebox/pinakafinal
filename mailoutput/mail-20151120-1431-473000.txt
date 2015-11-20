@@ -1,0 +1,29 @@
+To: jomarilance2@yahoo.com
+Subject: 
+Message-ID: <46adec0ec0606b050db6993e2c965969@localhost>
+Date: Fri, 20 Nov 2015 22:31:11 +0800
+From: Ask a Vet - Animal Medical Hospital <askavetamh@gmail.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>
+<html lang=3D"en-US">
+=09<head>
+=09=09<meta charset=
+=3D"utf-8">
+=09</head>
+=09<body>
+=09=09<h2>Password Reset</h2>
+
+=
+=09=09<div>
+=09=09=09To reset your password, complete this form: http://l=
+ocalhost:8000/password/reset/c58298e0deb605e82562d695f50f1588fcf41825.<br/>=
+
+=09=09=09This link will expire in 60 minutes.
+=09=09</div>
+=09</body=
+>
+</html>
+
