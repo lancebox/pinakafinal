@@ -49,7 +49,7 @@ Log::useFiles(storage_path().'/logs/laravel.log');
 App::error(function(Exception $exception, $code)
 {
 	Log::error($exception);
-	return "<h1>Page Not Found</h1>";
+	//return "<h1>Page Not Found</h1>";
 });
 
 /*
